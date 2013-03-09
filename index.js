@@ -30,8 +30,5 @@ module.exports = function (file) {
 function inRoot (node) {
   // add an extra level because
   // of the anonymous wrapper
-  var hasParent = node.parent
-      && node.parent.parent
-      && node.parent.parent.parent;
-  return !hasParent;
+  return !(node.parent.parent && node.parent.parent.parent);
 }
