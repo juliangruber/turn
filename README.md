@@ -1,4 +1,3 @@
-
 # turn
 
 minimal modules for a hypothetical es6 with lua's return, inspired by [substack/mmmify](https://github.com/substack/mmmify) and motivated by [@shtylman](https://github.com/shtylman).
@@ -49,6 +48,11 @@ $ node bundle.js
 ```
 
 POW.
+
+## how this works
+
+Normally return statements outside of functions are illegal in JavaScript. `turn` adds an anonymous function wrapper
+around each file and transforms top level `return` into `return module.exports=`.
 
 ## methods
 
