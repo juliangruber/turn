@@ -1,0 +1,23 @@
+{
+  "name": "turn",
+  "description": "minimal modules for a hypothetical es6 with lua's return",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juliangruber/turn.git"
+  },
+  "homepage": "https://github.com/juliangruber/turn",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "dependencies": {
+    "through": "~2.2.1",
+    "falafel": "~0.2.0"
+  },
+  "devDependencies": {
+    "tap": "*",
+    "browserify": "~2.4.3"
+  },
+  "license": "MIT"
+}
